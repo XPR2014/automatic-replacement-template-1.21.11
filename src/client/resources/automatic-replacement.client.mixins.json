@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.monkey.automatic.replacement.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"InventoryScreenMixin",
+		"OptionsScreenMixin",
+		"CreativeInventoryScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

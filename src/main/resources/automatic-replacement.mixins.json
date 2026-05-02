@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.monkey.automatic.replacement.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"TotemStackSizeMixin",
+		"WorldHeightMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

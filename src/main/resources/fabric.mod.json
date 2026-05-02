@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "automatic-replacement",
+	"version": "1.0.0",
+	"name": "Automatic replacement",
+	"description": "自动把图腾移到副手",
+	"authors": ["Monkey"],
+	"contact": {
+		"homepage": "https://github.com/XPR2014/automatic-replacement-template-1.21.11",
+		"sources": "https://github.com/XPR2014/automatic-replacement-template-1.21.11"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/automatic-replacement/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.monkey.automatic.replacement.AutomaticReplacement"
+		],
+		"client": [
+			"com.monkey.automatic.replacement.AutomaticReplacementClient"
+		]
+	},
+	"mixins": [
+		"automatic-replacement.mixins.json",
+		{
+			"config": "automatic-replacement.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
