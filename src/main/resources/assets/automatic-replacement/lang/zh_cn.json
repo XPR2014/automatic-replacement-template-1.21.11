@@ -1,0 +1,8 @@
+{
+  "auto.totem.button.on": "自动图腾: 开启",
+  "auto.totem.button.off": "自动图腾: 关闭",
+  "auto.totem.enabled": "[自动图腾] 已开启",
+  "auto.totem.disabled": "[自动图腾] 已关闭",
+  "auto.totem.status.enabled": "[自动图腾] 当前状态: 开启",
+  "auto.totem.status.disabled": "[自动图腾] 当前状态: 关闭"
+}

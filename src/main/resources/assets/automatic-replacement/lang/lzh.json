@@ -1,0 +1,8 @@
+{
+  "auto.totem.enabled": "[保命符] 开",
+  "auto.totem.disabled": "[保命符] 闭",
+  "auto.totem.status.enabled": "[保命符] 今在：开",
+  "auto.totem.status.disabled": "[保命符] 今在：闭",
+  "auto.totem.button.on": "保命符：开",
+  "auto.totem.button.off": "保命符：闭"
+}

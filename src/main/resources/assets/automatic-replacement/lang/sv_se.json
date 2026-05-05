@@ -1,0 +1,8 @@
+{
+  "auto.totem.enabled": "[Automatisk Totem] Aktiverad",
+  "auto.totem.disabled": "[Automatisk Totem] Inaktiverad",
+  "auto.totem.status.enabled": "[Automatisk Totem] Aktuell status: Aktiverad",
+  "auto.totem.status.disabled": "[Automatisk Totem] Aktuell status: Inaktiverad",
+  "auto.totem.button.on": "Automatisk Totem: På",
+  "auto.totem.button.off": "Automatisk Totem: Av"
+}

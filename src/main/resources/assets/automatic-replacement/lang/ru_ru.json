@@ -1,0 +1,8 @@
+{
+  "auto.totem.enabled": "[Авто Тотемы] Включено",
+  "auto.totem.disabled": "[Авто Тотемы] Выключено",
+  "auto.totem.status.enabled": "[Авто Тотемы] Текущий статус: Включено",
+  "auto.totem.status.disabled": "[Авто Тотемы] Текущий статус: Выключено",
+  "auto.totem.button.on": "Авто Тотемы: Вкл",
+  "auto.totem.button.off": "Авто Тотемы: Выкл"
+}

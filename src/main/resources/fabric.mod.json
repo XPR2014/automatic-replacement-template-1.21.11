@@ -1,13 +1,14 @@
 {
 	"schemaVersion": 1,
 	"id": "automatic-replacement",
-	"version": "1.0.0",
-	"name": "Automatic replacement",
-	"description": "自动把图腾移到副手",
+	"version": "1.1.0",
+	"name": "Automatic Replacement",
+	"description": "模组会自动把不死图腾放到副手，且修改很多物品的堆叠限制，世界最低为-128，最高为1024",
 	"authors": ["Monkey"],
 	"contact": {
-		"homepage": "https://github.com/XPR2014/automatic-replacement-template-1.21.11",
-		"sources": "https://github.com/XPR2014/automatic-replacement-template-1.21.11"
+		"sources": "https://github.com/XPR2014/automatic-replacement-template-1.21.11",
+		"modrinth": "https://modrinth.com/mod/automatic-replacement",
+		"email": "xupengrui2014@126.com"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/automatic-replacement/icon.png",
@@ -33,7 +34,10 @@
 		"java": ">=21",
 		"fabric-api": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
+	"custom": {
+		"modrinth": {
+			"projectId": "https://modrinth.com/mod/automatic-replacement",
+			"versionId": "1.1.0"
+		}
 	}
 }

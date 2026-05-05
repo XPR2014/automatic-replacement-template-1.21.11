@@ -1,0 +1,8 @@
+{
+  "auto.totem.enabled": "[自動トーテム] 有効",
+  "auto.totem.disabled": "[自動トーテム] 無効",
+  "auto.totem.status.enabled": "[自動トーテム] 現在の状態: 有効",
+  "auto.totem.status.disabled": "[自動トーテム] 現在の状態: 無効",
+  "auto.totem.button.on": "自動トーテム: 有効",
+  "auto.totem.button.off": "自動トーテム: 無効"
+}

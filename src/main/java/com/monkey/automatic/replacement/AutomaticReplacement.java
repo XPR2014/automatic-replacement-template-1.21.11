@@ -20,10 +20,8 @@ public class AutomaticReplacement implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// 注册 S2C 网络包
 		PayloadTypeRegistry.playS2C().register(AutoTotemSyncPacket.TYPE, AutoTotemSyncPacket.CODEC);
 
-		// 注册命令
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			dispatcher.register(literal("auto")
 					.then(literal("true").executes(this::setTrue))
@@ -33,7 +31,6 @@ public class AutomaticReplacement implements ModInitializer {
 			);
 		});
 
-		// 自动放置图腾
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
 			if (!globalEnabled) return;
 
@@ -55,21 +52,22 @@ public class AutomaticReplacement implements ModInitializer {
 
 	private int setTrue(CommandContext<CommandSourceStack> ctx) {
 		globalEnabled = true;
-		ctx.getSource().sendSuccess(() -> Component.literal("[自动图腾] 已开启"), false);
+		ctx.getSource().sendSuccess(() -> Component.translatable("auto.totem.enabled"), false);
 		broadcastToAll(ctx);
 		return 1;
 	}
 
 	private int setFalse(CommandContext<CommandSourceStack> ctx) {
 		globalEnabled = false;
-		ctx.getSource().sendSuccess(() -> Component.literal("[自动图腾] 已关闭"), false);
+		ctx.getSource().sendSuccess(() -> Component.translatable("auto.totem.disabled"), false);
 		broadcastToAll(ctx);
 		return 1;
 	}
 
 	private int toggle(CommandContext<CommandSourceStack> ctx) {
 		globalEnabled = !globalEnabled;
-		ctx.getSource().sendSuccess(() -> Component.literal("[自动图腾] 已" + (globalEnabled ? "开启" : "关闭")), false);
+		String key = globalEnabled ? "auto.totem.enabled" : "auto.totem.disabled";
+		ctx.getSource().sendSuccess(() -> Component.translatable(key), false);
 		broadcastToAll(ctx);
 		return 1;
 	}
@@ -78,7 +76,8 @@ public class AutomaticReplacement implements ModInitializer {
 		ServerPlayer player = ctx.getSource().getPlayer();
 		if (player != null) {
 			ServerPlayNetworking.send(player, new AutoTotemSyncPacket(globalEnabled));
-			player.sendSystemMessage(Component.literal("[自动图腾] 当前状态: " + (globalEnabled ? "开启" : "关闭")));
+			String key = globalEnabled ? "auto.totem.status.enabled" : "auto.totem.status.disabled";
+			player.sendSystemMessage(Component.translatable(key));
 		}
 		return 1;
 	}

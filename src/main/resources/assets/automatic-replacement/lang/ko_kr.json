@@ -1,0 +1,8 @@
+{
+  "auto.totem.button.on": "자동 토템: 켜짐",
+  "auto.totem.button.off": "자동 토템: 꺼짐",
+  "auto.totem.enabled": "[자동 토템] 활성화",
+  "auto.totem.disabled": "[자동 토템] 비활성화",
+  "auto.totem.status.enabled": "[자동 토템] 현재 상태: 활성화",
+  "auto.totem.status.disabled": "[자동 토템] 현재 상태: 비활성화"
+}

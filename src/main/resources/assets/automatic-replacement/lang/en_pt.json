@@ -1,0 +1,8 @@
+{
+    "auto.totem.enabled": "[Arrr! Totem] Be activated!",
+    "auto.totem.disabled": "[Arrr! Totem] Be scuttled!",
+    "auto.totem.status.enabled": "[Arrr! Totem] Current status: AHOY! Activated!",
+    "auto.totem.status.disabled": "[Arrr! Totem] Current status: DAVY JONES' LOCKER! Disabled!",
+    "auto.totem.button.on": "Auto Totem: YARR! ON!",
+    "auto.totem.button.off": "Auto Totem: SHIVER ME TIMBERS! OFF!"
+}

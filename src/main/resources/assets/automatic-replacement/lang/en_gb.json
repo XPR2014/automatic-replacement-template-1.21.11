@@ -1,0 +1,8 @@
+{
+  "auto.totem.enabled": "[Auto Totem] Enabled",
+  "auto.totem.disabled": "[Auto Totem] Disabled",
+  "auto.totem.status.enabled": "[Auto Totem] Current status: Enabled",
+  "auto.totem.status.disabled": "[Auto Totem] Current status: Disabled",
+  "auto.totem.button.on": "Auto Totem: On",
+  "auto.totem.button.off": "Auto Totem: Off"
+}
