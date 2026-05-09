@@ -22,7 +22,7 @@ gradlew.bat build
 ```
 
 ## 📄 License
-This project is licensed under the CC0-1.0 Universal License.You can use, modify, and redistribute it freely without attribution.
+This project is licensed under the MIT License.
 
 ---
 
@@ -50,5 +50,4 @@ Mac / Linux 终端运行：
 编译完成后，模组文件在 build/libs 目录里。
 
 ## 开源协议
-本项目采用 CC0-1.0 开源协议。
-完全公有领域，任何人可以随意使用、修改、分发、商用，无需注明原作者。
+本项目采用 MIT 开源协议。
